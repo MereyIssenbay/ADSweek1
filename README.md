@@ -25,7 +25,7 @@ public class problem1 {
             return Math.min(arr[n-1], findMin(arr, n-1));
         }
     }
-}````
+} ````
 <br/><br/>
 Here the function "findMin" accepts the array "arr" and number of it's elements "n".
 The "findMin" function uses recursion to find the minimum value in the array. If the length of the array is 1, 
