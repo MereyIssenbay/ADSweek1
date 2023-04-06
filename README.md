@@ -3,7 +3,7 @@
 **Problem 1**: Return minimun from array with n elements.
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem1 {
     public static void main(){
@@ -26,6 +26,7 @@ public class problem1 {
         }
     }
 } 
+```
 
 Here the function "findMin" accepts the array "arr" and number of it's elements "n".
 The "findMin" function uses recursion to find the minimum value in the array. If the length of the array is 1, 
@@ -38,7 +39,7 @@ found in the rest of the array, and returns the smaller of the two.
 **Problem 2**: Return average value of array
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem2 {
     public static void main(){
@@ -60,6 +61,7 @@ public class problem2 {
         return avg/n;
     }
 }
+```
 
 Here the function "findAvg" accepts the array "arr" and number of it's elements "n".
 The "findAvg" function calculates the average value of the array by first initializing a variable called "avg" to 0, 
@@ -72,7 +74,7 @@ the function returns the value of "avg" divided by "n".
 **Problem 3**: Check a number for a prime
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem3 {
     public static void main(){
@@ -100,6 +102,8 @@ public class problem3 {
         return true;
     }
 }
+```
+
 
 Here the function "findIsPrime" accepts the integer value "n" wich represents the number that we need to check.
 The "findIsPrime" function uses a for loop to iterate over all integers between 2 and the square root of "n". If "n" is divisible by any integer in this range, the function returns false. Otherwise, the function returns true.
@@ -110,7 +114,7 @@ The "findIsPrime" function uses a for loop to iterate over all integers between 
 **Problem 4**: Return factorial of number
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem4 {
     public static void main(){
@@ -135,6 +139,8 @@ public class problem4 {
         }
     }
 }
+```
+
 
 Here the function "findFactorial" accepts the integer value "n" wich represents the number wich factorial we need to calculate.
 If "n" is 0, the function returns 1. Otherwise, the function returns the product of "n" and the factorial of "n-1" calculated recursively by calling the "findFactorial" function with argument "n-1".
@@ -145,7 +151,7 @@ If "n" is 0, the function returns 1. Otherwise, the function returns the product
 **Problem 5**: Return the number on n-th term of fibonacci sequence
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem5 {
     public static void main(){
@@ -174,6 +180,8 @@ public class problem5 {
         }
     }
 }
+```
+
 
 Here the function "findFibonacci" accepts the integer value "n" wich represents the n-th term of fibonacci sequence.
 If "n" is 0, the function returns 0. If "n" is 1, the function returns 1. Otherwise, the function returns the sum of the (n-1)-th Fibonacci number and the (n-2)-th Fibonacci number calculated recursively by calling the "findFibonacci" function with argument "n-1" and "n-2", respectively.
@@ -184,7 +192,7 @@ If "n" is 0, the function returns 0. If "n" is 1, the function returns 1. Otherw
 **Problem 6**: Return number a in power of n
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem6 {
     public static void main(){
@@ -204,6 +212,7 @@ public class problem6 {
         }
     }
 }
+```
 
 
 Here the function "calculatePowerOf" accepts the integer value "a" and integer value "n" which represents base and power respectively.
@@ -216,7 +225,7 @@ This process is repeated recursively until n becomes 0, and the final result is 
 **Problem 7**: Return number a in power of n
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem7 {
     public static void main(){
@@ -235,6 +244,7 @@ public class problem7 {
         System.out.print(element + " ");
     }
 }
+```
 
 
 Here the function "reverse" accepts the integer value "n" and Scanner object "sc" which represents base and power respectively.
@@ -248,7 +258,7 @@ Since the recursive calls are made before the integers are printed, the output w
 **Problem 8**: Check is given string full of digits
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem8 {
     public static void main(){
@@ -276,6 +286,7 @@ public class problem8 {
         }
     }
 }
+```
 
 
 Here the function "isFullDigit" accepts the String value "s" and recursively checks if the last character in the string is a digit using ASCII codes and whether the rest of the string is also composed of digits. If both conditions are true, then it returns true, else it returns false. The recursion is used to check each character in the string one by one, starting from the end.
@@ -286,7 +297,7 @@ Here the function "isFullDigit" accepts the String value "s" and recursively che
 **Problem 9**: Return binomial coefficient of "n" and "k"
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem9 {
     public static void main(){
@@ -308,6 +319,8 @@ public class problem9 {
         }
     }
 }
+```
+
 
 Here the function "calculate" accepts the integer values "n" and "k".The recursive algorithm works by breaking down the problem into smaller sub-problems, which are then solved recursively until they reach the base case. The base case is when either k or (n-k) equals 0 or n, in which case the result is 1. The recursive step involves calculating the sum of the binomial coefficients of the previous row in Pascal's triangle, which corresponds to calculating C(n-1,k-1) and C(n-1,k) and adding them together.
 
@@ -318,7 +331,7 @@ Here the function "calculate" accepts the integer values "n" and "k".The recursi
 **Problem 10**: Return GCD of "n" and "k"
 <br/><br/>
 **Solution**:
-````java
+```java
 import java.util.Scanner;
 public class problem10 {
     public static void main(){
@@ -337,6 +350,7 @@ public class problem10 {
         }
     }
 }
+```
 
 
 Here the function "findGCD" accepts the integer values "n" and "k".The "findGCD" method uses the Euclidean algorithm to recursively find the GCD. The algorithm states that the GCD of two integers "n" and "k" is equal to the GCD of "k" and the remainder of "n/k". The method first checks if "k" is zero, which means that "n" is the GCD of the two numbers. If "k" is not zero, the method calls itself with the arguments "k" and "n%k".
