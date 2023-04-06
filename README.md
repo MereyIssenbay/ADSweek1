@@ -1,6 +1,6 @@
 # Assignment documentation 
 <br/><br/>
-**Problem 1**: Here we need to find minimun from array with n elements.
+**Problem 1**: Return minimun from array with n elements.
 <br/><br/>
 **Solution**:
 ````java
@@ -31,3 +31,7 @@ Here the function "findMin" accepts the array "arr" and number of it's elements 
 The "findMin" function uses recursion to find the minimum value in the array. If the length of the array is 1, 
 the function simply returns the value at index 0. Otherwise, it compares the value at index "n-1" to the minimum value 
 found in the rest of the array, and returns the smaller of the two.
+
+
+
+**Problem 2**: Here we need to
