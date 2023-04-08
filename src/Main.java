@@ -69,7 +69,15 @@ public class Main {
                 problem7.reverse(n, sc);
                 break;
             case 8:
-                problem8.main();
+                System.out.println("Give me string: ");
+                String s = sc.next();
+                if (problem8.isFullDigit(s)) {
+                    System.out.println("Yes");
+                } else if (s.equals("-1")) {
+                    break;
+                } else {
+                    System.out.println("NO");
+                }
                 break;
             case 9:
                 problem9.main();
