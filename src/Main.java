@@ -86,7 +86,10 @@ public class Main {
                 System.out.println(problem9.calculate(n,k));
                 break;
             case 10:
-                problem10.main();
+                System.out.println("Give me two integers to find gcd: ");
+                n = sc.nextInt();
+                k = sc.nextInt();
+                System.out.println(problem10.findGCD(n,k));
                 break;
             default:
                 System.out.println("Out of range!!!");
