@@ -80,7 +80,10 @@ public class Main {
                 }
                 break;
             case 9:
-                problem9.main();
+                System.out.println("Give me n and k(n>=k): ");
+                n = sc.nextInt();
+                int k = sc.nextInt();
+                System.out.println(problem9.calculate(n,k));
                 break;
             case 10:
                 problem10.main();
