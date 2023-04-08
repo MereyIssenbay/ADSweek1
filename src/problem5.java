@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class problem5 {
     public static int findFibonacci(int n){
         if(n == 0){
