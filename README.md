@@ -4,19 +4,7 @@
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem1 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Give a number of elements: ");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for(int i = 0; i < n;i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.println("Minimum: ");
-        System.out.println(findMin(arr, n));
-    }
     public static int findMin(int[] arr, int n) {
         if (n == 1) {
             return arr[0];
@@ -40,19 +28,7 @@ found in the rest of the array, and returns the smaller of the two.
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem2 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Give a number of elements: ");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for(int i = 0; i < n;i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.println("Average: ");
-        System.out.println(findAvg(arr,n));
-    }
     public static float findAvg(int[] arr, int n) {
         float avg = 0;
         for(int i = 0; i < n;i++){
@@ -75,19 +51,7 @@ the function returns the value of "avg" divided by "n".
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem3 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Give a number: ");
-        int n = sc.nextInt();
-        if(findIsPrime(n)){
-            System.out.println(n + " is prime");
-        }
-        else{
-            System.out.println(n + " is composite");
-        }
-    }
     public static boolean findIsPrime(int n) {
         if (n <= 1) {
             return false;
@@ -115,21 +79,7 @@ The "findIsPrime" function uses a for loop to iterate over all integers between 
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem4 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            System.out.println("give a number: ");
-            int n = sc.nextInt();
-            if(n >= 0) {
-                System.out.println(findFactorial(n));
-            }
-            else{
-                break;
-            }
-        }
-    }
     public static int findFactorial(int n){
         if(n == 0){
             return 1;
@@ -152,22 +102,7 @@ If "n" is 0, the function returns 1. Otherwise, the function returns the product
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem5 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            System.out.println("give a positive integer (or negative to quite): ");
-            int n = sc.nextInt();
-            if(n >= 0) {
-                System.out.println(findFibonacci(n));
-            }
-            else{
-                System.out.println("bye");
-                break;
-            }
-        }
-    }
     public static int findFibonacci(int n){
         if(n == 0){
             return 0;
@@ -193,16 +128,7 @@ If "n" is 0, the function returns 0. If "n" is 1, the function returns 1. Otherw
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem6 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Give a base and power: ");
-        String[] input = sc.nextLine().split(" ");
-        int a = Integer.parseInt(input[0]);
-        int n = Integer.parseInt(input[1]);
-        System.out.println(calculatePowerOf(a,n));
-    }
     public static int calculatePowerOf(int a, int n){
         if(n == 0){
             return 1;
@@ -228,13 +154,6 @@ This process is repeated recursively until n becomes 0, and the final result is 
 ```java
 import java.util.Scanner;
 public class problem7 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Give the number of numbers: ");
-        int n = sc.nextInt();
-        System.out.print("Give numbers: ");
-        reverse(n, sc);
-    }
     public static void reverse(int n, Scanner sc) {
         if (n <= 0) {
             return;
@@ -259,22 +178,7 @@ Since the recursive calls are made before the integers are printed, the output w
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem8 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        while (true) {
-            System.out.println("Give me string: ");
-            String s = sc.next();
-            if (isFullDigit(s)) {
-                System.out.println("Yes");
-            } else if (s.equals("-1")) {
-                break;
-            } else {
-                System.out.println("NO");
-            }
-        }
-    }
     public static boolean isFullDigit(String s){
         if(s.isEmpty()){
             return true;
@@ -298,15 +202,7 @@ Here the function "isFullDigit" accepts the String value "s" and recursively che
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem9 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Give me entries: ");
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        System.out.println(calculate(n,k));
-    }
     public static int calculate(int n, int k){
         if(k == 0 || n == k){
             return 1;
@@ -332,15 +228,7 @@ Here the function "calculate" accepts the integer values "n" and "k".The recursi
 <br/><br/>
 **Solution**:
 ```java
-import java.util.Scanner;
 public class problem10 {
-    public static void main(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Give me two integers to find gcd: ");
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        System.out.println(findGCD(n,k));
-    }
     public static int findGCD(int n, int k){
         if(k == 0){
             return n;
