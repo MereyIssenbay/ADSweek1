@@ -63,7 +63,10 @@ public class Main {
                 System.out.println(problem6.calculatePowerOf(a,n));
                 break;
             case 7:
-                problem7.main();
+                System.out.print("Give the number of numbers: ");
+                n = sc.nextInt();
+                System.out.print("Give numbers: ");
+                problem7.reverse(n, sc);
                 break;
             case 8:
                 problem8.main();
