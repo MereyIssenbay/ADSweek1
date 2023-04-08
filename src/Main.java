@@ -57,7 +57,10 @@ public class Main {
                 System.out.println(problem5.findFibonacci(n));
                 break;
             case 6:
-                problem6.main();
+                System.out.println("Give a base and power: ");
+                int a = sc.nextInt();
+                n = sc.nextInt();
+                System.out.println(problem6.calculatePowerOf(a,n));
                 break;
             case 7:
                 problem7.main();
