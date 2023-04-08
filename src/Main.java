@@ -42,7 +42,14 @@ public class Main {
                 }
                 break;
             case 4:
-                problem4.main();
+                System.out.println("give a number: ");
+                n = sc.nextInt();
+                if(n >= 0) {
+                    System.out.println(problem4.findFactorial(n));
+                }
+                else{
+                    break;
+                }
                 break;
             case 5:
                 problem5.main();
