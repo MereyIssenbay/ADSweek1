@@ -32,7 +32,14 @@ public class Main {
                 System.out.println(problem2.findAvg(arr,n));
                 break;
             case 3:
-                problem3.main();
+                System.out.println("Give a number: ");
+                n = sc.nextInt();
+                if(problem3.findIsPrime(n)){
+                    System.out.println(n + " is prime");
+                }
+                else {
+                    System.out.println(n + " is composite");
+                }
                 break;
             case 4:
                 problem4.main();

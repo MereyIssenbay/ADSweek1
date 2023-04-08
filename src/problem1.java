@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class problem1 {
     public static int findMin(int[] arr, int n) {
         if (n == 1) {
