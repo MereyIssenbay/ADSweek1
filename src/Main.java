@@ -10,7 +10,14 @@ public class Main {
             case -1:
                 System.exit(0);
             case 1:
-                problem1.main();
+                System.out.println("Give a number of elements: ");
+                int n = sc.nextInt();
+                int[] arr = new int[n];
+                for(int i = 0; i < n;i++){
+                    arr[i] = sc.nextInt();
+                }
+                System.out.println("Minimum: ");
+                System.out.println(problem1.findMin(arr, n));
                 break;
             case 2:
                 problem2.main();
