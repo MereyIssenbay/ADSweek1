@@ -52,7 +52,9 @@ public class Main {
                 }
                 break;
             case 5:
-                problem5.main();
+                System.out.println("give n-th term: ");
+                n = sc.nextInt();
+                System.out.println(problem5.findFibonacci(n));
                 break;
             case 6:
                 problem6.main();
