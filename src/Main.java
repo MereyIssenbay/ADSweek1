@@ -13,6 +13,7 @@ public class Main {
                 System.out.println("Give a number of elements: ");
                 int n = sc.nextInt();
                 int[] arr = new int[n];
+                System.out.println("Give elements: ");
                 for(int i = 0; i < n;i++){
                     arr[i] = sc.nextInt();
                 }
@@ -20,7 +21,15 @@ public class Main {
                 System.out.println(problem1.findMin(arr, n));
                 break;
             case 2:
-                problem2.main();
+                System.out.println("Give a number of elements: ");
+                n = sc.nextInt();
+                arr = new int[n];
+                System.out.println("Give elements: ");
+                for(int i = 0; i < n;i++){
+                    arr[i] = sc.nextInt();
+                }
+                System.out.println("Average: ");
+                System.out.println(problem2.findAvg(arr,n));
                 break;
             case 3:
                 problem3.main();
